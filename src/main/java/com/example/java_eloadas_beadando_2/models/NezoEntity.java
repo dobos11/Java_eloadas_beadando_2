@@ -16,10 +16,10 @@ public class NezoEntity {
     private String nev;
     @Basic
     @Column(name = "ferfi")
-    private byte ferfi;
+    private byte ferfi=-1;
     @Basic
     @Column(name = "berletes")
-    private byte berletes;
+    private byte berletes=-1;
 
     public NezoEntity() {
     }

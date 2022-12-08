@@ -62,7 +62,7 @@ public class AdatbazisMenu {
     public static List<MeccsEntity> ReadMeccs(){
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        List<MeccsEntity> meccsEntityList= session.createQuery("FROM meccs").list();
+        List meccsEntityList= session.createQuery("FROM meccs").list();
         transaction.commit();
         session.close();
         factory.close();
@@ -72,7 +72,7 @@ public class AdatbazisMenu {
     public static List<NezoEntity> ReadNezo(){
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        List<NezoEntity> nezoEntityList=session.createQuery("FROM nezo").list();
+        List nezoEntityList=session.createQuery("FROM nezo").list();
         transaction.commit();
         session.close();
         factory.close();
@@ -82,7 +82,7 @@ public class AdatbazisMenu {
     public static List<BelepesEntity> ReadBelepes(){
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        List<BelepesEntity> belepesEntityList=session.createQuery("FROM belepes").list();
+        List belepesEntityList=session.createQuery("FROM belepes").list();
         transaction.commit();
         session.close();
         factory.close();
@@ -142,11 +142,41 @@ public class AdatbazisMenu {
     }
 
     public static void UpdateNezo(NezoEntity uj) {
-        //TODO
+        Session session=CreateSession();
+        Transaction transaction=session.beginTransaction();
+        NezoEntity regi=session.load(NezoEntity.class,uj.getId());
+        if(uj.getBerletes()!= -1){
+            regi.setBerletes(uj.getBerletes());
+        }
+        if(uj.getFerfi()!= -1){
+            regi.setFerfi(uj.getFerfi());
+        }
+        if(uj.getNev()!= null){
+            regi.setNev(uj.getNev());
+        }
+        session.update(regi);
+        transaction.commit();
+        session.close();
+        factory.close();
     }
 
     public static void UpdateBelepes(BelepesEntity uj) {
-        //TODO
+        Session session=CreateSession();
+        Transaction transaction=session.beginTransaction();
+        BelepesEntity regi=session.load(BelepesEntity.class,uj.getId());
+        if(uj.getIdopont()!=null){
+            regi.setIdopont(uj.getIdopont());
+        }
+        if(uj.getMeccsid()!=0){
+            regi.setMeccsid(uj.getMeccsid());
+        }
+        if(uj.getNezoid()!=0){
+            regi.setNezoid(uj.getNezoid());
+        }
+        session.update(regi);
+        transaction.commit();
+        session.close();
+        factory.close();
     }
 
     public static void DeleteMeccs(int id){
@@ -158,6 +188,25 @@ public class AdatbazisMenu {
         session.close();
         factory.close();
 
+    }
+    public static void DeleteNezo(int id){
+        Session session=CreateSession();
+        Transaction transaction=session.beginTransaction();
+        NezoEntity nezo=session.load(NezoEntity.class,id);
+        session.delete(nezo);
+        transaction.commit();
+        session.close();
+        factory.close();
+    }
+
+    public static void DeleteBelepes(int id){
+        Session session=CreateSession();
+        Transaction transaction=session.beginTransaction();
+        BelepesEntity belepes=session.load(BelepesEntity.class,id);
+        session.delete(belepes);
+        transaction.commit();
+        session.close();
+        factory.close();
     }
 
 

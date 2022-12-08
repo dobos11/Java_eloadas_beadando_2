@@ -1,4 +1,4 @@
-package com.example.java_eloadas_beadando_2;
+package com.example.java_eloadas_beadando_2.Adatbazismenu;
 
 import com.example.java_eloadas_beadando_2.models.BelepesEntity;
 import com.example.java_eloadas_beadando_2.models.MeccsEntity;

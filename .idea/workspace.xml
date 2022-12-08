@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="AdatbazisMenu Create függvények,Read függvények, ReadById függvények, UpdateMeccs, DeleteMecss függvények megírása (még nem volt tesztelve.)">
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Adatbázismenü kész, tesztelve meccs táblával.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdabazisOlvas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/AdabazisOlvas.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/AdatbazisMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/AdatbazisMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/AdatbazisMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdatbazisMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -33,17 +39,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;b5f4e868-a882-4aff-8905-1fb716c79b1d&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Bence/IdeaProjects/Java_eloadas_beadando_2/src/main/java/com/example/java_eloadas_beadando_2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JPA.DatabaseSchemaImportDialog": "b5f4e868-a882-4aff-8905-1fb716c79b1d",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_directory_selection": "C:/Users/Bence/IdeaProjects/Java_eloadas_beadando_2/src/main/java/com/example/java_eloadas_beadando_2",
+    "last_opened_file_path": "C:/Users/Bence/IdeaProjects/Java_eloadas_beadando_2/src/main/java/com/example/java_eloadas_beadando_2",
+    "settings.editor.selected.configurable": "preferences.customizations"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2" />
@@ -121,7 +128,9 @@
       <workItem from="1670437842552" duration="80000" />
       <workItem from="1670437948789" duration="4493000" />
       <workItem from="1670495355045" duration="1095000" />
-      <workItem from="1670504252685" duration="1437000" />
+      <workItem from="1670504252685" duration="1720000" />
+      <workItem from="1670521191331" duration="2812000" />
+      <workItem from="1670524360441" duration="2623000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -137,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670442538353</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adatbázismenü kész, tesztelve meccs táblával.">
+      <created>1670505942024</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670505942024</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +173,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése." />
     <MESSAGE value="AdatbazisMenu Create függvények,Read függvények, ReadById függvények, UpdateMeccs, DeleteMecss függvények megírása (még nem volt tesztelve.)" />
-    <option name="LAST_COMMIT_MESSAGE" value="AdatbazisMenu Create függvények,Read függvények, ReadById függvények, UpdateMeccs, DeleteMecss függvények megírása (még nem volt tesztelve.)" />
+    <MESSAGE value="Adatbázismenü kész, tesztelve meccs táblával." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adatbázismenü kész, tesztelve meccs táblával." />
   </component>
 </project>

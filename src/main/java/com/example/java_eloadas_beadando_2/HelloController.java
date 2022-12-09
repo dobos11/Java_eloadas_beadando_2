@@ -15,4 +15,16 @@ public class HelloController {
 
     public void menuOlvasClick(ActionEvent actionEvent) {
     }
+
+    public void menuOlvas2Click(ActionEvent actionEvent) {
+    }
+
+    public void menuÍrClick(ActionEvent actionEvent) {
+    }
+
+    public void menuModositClick(ActionEvent actionEvent) {
+    }
+
+    public void menuTorolClick(ActionEvent actionEvent) {
+    }
 }

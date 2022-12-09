@@ -10,8 +10,8 @@ public class RestKliens {
     public static void main(String[] args) throws IOException {
         GET(null);
         // Emailnek egyedinek kell lenni!!!
-        POST("Horváth János", "male", "email21@data.hu","active");
-        String ID="3917";
+        POST("Horváth Károly", "male", "email4@data.hu","active");
+        String ID="4024";
         GET(ID);
         PUT(ID,"Horváth János2", "male", "email3@data.hu","active");
         GET(ID);
@@ -31,7 +31,7 @@ public class RestKliens {
         if(ID!=null)
             connection.setRequestProperty("Authorization", "Bearer " + token);
         segéd3(HttpsURLConnection.HTTP_OK);
-        //HttpsURLConnection.HTTP_OK: 200
+        //HttpsURLConnection.HTTP_OK => 200
 
     }
 

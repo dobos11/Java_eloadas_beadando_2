@@ -22,10 +22,10 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Rest1">
             <items>
-              <MenuItem mnemonicParsing="false" text="Create" onAction="#CreateClick" />
-                <MenuItem mnemonicParsing="false" text="Read" onAction="#ReadClick" />
-                <MenuItem mnemonicParsing="false" text="Update" onAction="#UpdateClick" />
-                <MenuItem mnemonicParsing="false" text="Delete" onAction="#DeleteClick" />
+              <MenuItem mnemonicParsing="false" onAction="#CreateClick" text="Create" />
+                <MenuItem mnemonicParsing="false" onAction="#ReadClick" text="Read" />
+                <MenuItem mnemonicParsing="false" onAction="#UpdateClick" text="Update" />
+                <MenuItem mnemonicParsing="false" onAction="#DeleteClick" text="Delete" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Rest2">

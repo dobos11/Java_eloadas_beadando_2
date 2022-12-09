@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Adatbázismenü kész, tesztelve meccs táblával.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/RestKliens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="RestFul Kliens" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -160,7 +156,7 @@
       <workItem from="1670521191331" duration="2812000" />
       <workItem from="1670524360441" duration="2623000" />
       <workItem from="1670528556282" duration="24000" />
-      <workItem from="1670528586592" duration="927000" />
+      <workItem from="1670528586592" duration="1272000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -183,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670505942024</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="RestFul Kliens">
+      <created>1670529812685</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670529812685</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +207,7 @@
     <MESSAGE value="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése." />
     <MESSAGE value="AdatbazisMenu Create függvények,Read függvények, ReadById függvények, UpdateMeccs, DeleteMecss függvények megírása (még nem volt tesztelve.)" />
     <MESSAGE value="Adatbázismenü kész, tesztelve meccs táblával." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adatbázismenü kész, tesztelve meccs táblával." />
+    <MESSAGE value="RestFul Kliens" />
+    <option name="LAST_COMMIT_MESSAGE" value="RestFul Kliens" />
   </component>
 </project>

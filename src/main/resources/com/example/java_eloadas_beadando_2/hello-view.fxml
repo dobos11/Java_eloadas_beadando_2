@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="TOP_CENTER" prefHeight="160.0" prefWidth="373.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_eloadas_beadando_2.HelloController">
+<VBox alignment="TOP_CENTER" prefHeight="385.0" prefWidth="597.0" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_eloadas_beadando_2.HelloController">
    <children>
       <MenuBar fx:id="menuBar">
         <menus>
@@ -21,10 +22,10 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Rest1">
             <items>
-              <MenuItem mnemonicParsing="false" text="Create" />
-                <MenuItem mnemonicParsing="false" text="Read" />
-                <MenuItem mnemonicParsing="false" text="Update" />
-                <MenuItem mnemonicParsing="false" text="Delete" />
+              <MenuItem mnemonicParsing="false" text="Create" onAction="#CreateClick" />
+                <MenuItem mnemonicParsing="false" text="Read" onAction="#ReadClick" />
+                <MenuItem mnemonicParsing="false" text="Update" onAction="#UpdateClick" />
+                <MenuItem mnemonicParsing="false" text="Delete" onAction="#DeleteClick" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Rest2">
@@ -40,6 +41,8 @@
         </menus>
       </MenuBar>
       <Label alignment="TOP_CENTER" text="Válasszon egy menüpontot" />
+      <Label text="TestLabel" />
+      <Button mnemonicParsing="false" onAction="#gombocska" text="Button" />
    </children>
 
 </VBox>

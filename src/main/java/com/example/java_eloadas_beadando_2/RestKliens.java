@@ -6,6 +6,8 @@ import java.net.URL;
 
 public class RestKliens {
     static HttpsURLConnection connection;
+    private String putResponseValue;
+    private String deleteResponseValue;
     static String token = "1aaa49374c4d0b812e0ced6e0892bcaa3072d5e5eede2ca139c3d7d350001ecf";
     public static void main(String[] args) throws IOException {
         GET(null);
@@ -53,7 +55,7 @@ public class RestKliens {
         connection.disconnect();
     }
 
-    static void POST(String name, String gender, String email, String status) throws IOException {
+    public static void POST(String name, String gender, String email, String status) throws IOException {
         System.out.println("\nPOST...");
         URL postUrl = new URL("https://gorest.co.in/public/v1/users");  // Url for making POST request
         connection = (HttpsURLConnection) postUrl.openConnection();
@@ -107,9 +109,9 @@ public class RestKliens {
     }
 
 
-
-
-
+    public static String getGetResponseValue() {
+        return getGetResponseValue();
+    }
 }
 
 

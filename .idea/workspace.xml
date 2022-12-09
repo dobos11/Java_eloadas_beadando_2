@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="RestFul Kliens">
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="RestFul Kliens update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/RestKliens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/RestKliens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,7 +138,8 @@
       <workItem from="1670524360441" duration="2623000" />
       <workItem from="1670528556282" duration="24000" />
       <workItem from="1670528586592" duration="1272000" />
-      <workItem from="1670602160423" duration="2776000" />
+      <workItem from="1670602160423" duration="4057000" />
+      <workItem from="1670606881636" duration="581000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -168,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670529812685</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="RestFul Kliens update">
+      <created>1670605742847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670605742847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +198,7 @@
     <MESSAGE value="AdatbazisMenu Create függvények,Read függvények, ReadById függvények, UpdateMeccs, DeleteMecss függvények megírása (még nem volt tesztelve.)" />
     <MESSAGE value="Adatbázismenü kész, tesztelve meccs táblával." />
     <MESSAGE value="RestFul Kliens" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestFul Kliens" />
+    <MESSAGE value="RestFul Kliens update" />
+    <option name="LAST_COMMIT_MESSAGE" value="RestFul Kliens update" />
   </component>
 </project>

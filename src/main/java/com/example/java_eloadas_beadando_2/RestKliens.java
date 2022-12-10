@@ -22,7 +22,7 @@ public class RestKliens {
         GET(null);
     }
 
-    static void GET(String ID) throws IOException {  // Get a list of users
+    public static void GET(String ID) throws IOException {  // Get a list of users
         System.out.println("\nGET...");
         String url = "https://gorest.co.in/public/v1/users";
         if(ID!=null)
@@ -84,7 +84,7 @@ public class RestKliens {
         connection.connect();
     }
 
-    static void PUT(String ID, String name, String gender, String email, String status) throws IOException {
+    public static void PUT(String ID, String name, String gender, String email, String status) throws IOException {
         System.out.println("\nPUT...");
         String url = "https://gorest.co.in/public/v1/users"+"/"+ID;
         URL postUrl = new URL(url);  // Url for making PUT request
@@ -96,7 +96,7 @@ public class RestKliens {
         segéd3(HttpsURLConnection.HTTP_OK);
     }
 
-    static void DELETE(String ID) throws IOException {
+    public static void DELETE(String ID) throws IOException {
         System.out.println("\nDELETE...");
         String url = "https://gorest.co.in/public/v1/users"+"/"+ID;
         URL postUrl = new URL(url);  // Url for making PUT request

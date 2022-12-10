@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml" />
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,6 +151,7 @@
       <workItem from="1670659812837" duration="2759000" />
       <workItem from="1670662597078" duration="55000" />
       <workItem from="1670662666865" duration="2528000" />
+      <workItem from="1670666407805" duration="1587000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>

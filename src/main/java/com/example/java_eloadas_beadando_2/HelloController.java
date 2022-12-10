@@ -72,4 +72,6 @@ public class HelloController {
         FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("deletepage.fxml"));
     }
 
+    public void bt1Click(ActionEvent actionEvent) {
+    }
 }

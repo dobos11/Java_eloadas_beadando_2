@@ -80,4 +80,26 @@ public class HelloController {
 
     public void menuTorolClick(ActionEvent actionEvent) {
     }
+
+    public void CreateClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("createpage.fxml"));
+    }
+
+
+    public void ReadClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("readpage.fxml"));
+    }
+
+
+    public void UpdateClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("update.fxml"));
+    }
+
+
+    public void DeleteClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("deletepage.fxml"));
+    }
+
+    public void bt1Click(ActionEvent actionEvent) {
+    }
 }

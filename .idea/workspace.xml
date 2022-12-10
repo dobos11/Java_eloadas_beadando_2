@@ -4,22 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Egy Föoldal menükkel">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdabazisController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/Megjelenito.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/AdabazisOlvas.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/AdatBazisOlvas2.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Fxml/deletepage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Fxml/readpage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Fxml/updatepage.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Parallel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/createpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdatbazisMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdatbazisMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/RestKliens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/RestKliens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,9 +61,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Bence/IdeaProjects/Java_eloadas_beadando_2/src/main/java/com/example/java_eloadas_beadando_2&quot;,
     &quot;last_opened_file_path&quot;: &quot;E:/GIthub/works/Java bead/Java_eloadas_beadando_2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -74,9 +75,11 @@
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GIthub\works\Java bead\Java_eloadas_beadando_2\src\main\resources\com\example\java_eloadas_beadando_2" />
+      <recent name="E:\GIthub\works\Java bead\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2\Fxml" />
+      <recent name="E:\GIthub\works\Java bead\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2" />
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\resources" />
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\resources\com\example\java_eloadas_beadando_2" />
-      <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -151,8 +154,13 @@
       <workItem from="1670524360441" duration="2623000" />
       <workItem from="1670528556282" duration="24000" />
       <workItem from="1670528586592" duration="1272000" />
-      <workItem from="1670602160423" duration="2776000" />
-      <workItem from="1670669792447" duration="3904000" />
+      <workItem from="1670602160423" duration="4057000" />
+      <workItem from="1670606881636" duration="1775000" />
+      <workItem from="1670614025661" duration="4556000" />
+      <workItem from="1670659812837" duration="2759000" />
+      <workItem from="1670662597078" duration="55000" />
+      <workItem from="1670662666865" duration="2528000" />
+      <workItem from="1670666407805" duration="1587000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -182,7 +190,49 @@
       <option name="project" value="LOCAL" />
       <updated>1670529812685</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="RestFul Kliens update">
+      <created>1670605742847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670605742847</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Xml checking">
+      <created>1670607583073</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670607583073</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Work on xml">
+      <created>1670613861177</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1670613861177</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Work on xml">
+      <created>1670618501980</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670618501980</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Work on xml">
+      <created>1670663536171</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670663536171</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Work on xml">
+      <created>1670665799705</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670665799705</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +254,9 @@
     <MESSAGE value="AdatbazisMenu Create függvények,Read függvények, ReadById függvények, UpdateMeccs, DeleteMecss függvények megírása (még nem volt tesztelve.)" />
     <MESSAGE value="Adatbázismenü kész, tesztelve meccs táblával." />
     <MESSAGE value="RestFul Kliens" />
-    <option name="LAST_COMMIT_MESSAGE" value="RestFul Kliens" />
+    <MESSAGE value="RestFul Kliens update" />
+    <MESSAGE value="Xml checking" />
+    <MESSAGE value="Work on xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Work on xml" />
   </component>
 </project>

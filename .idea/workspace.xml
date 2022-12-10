@@ -4,9 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="RestFul Kliens">
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Egy Föoldal menükkel">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/b5f4e868-a882-4aff-8905-1fb716c79b1d/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdabazisController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/Megjelenito.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/AdabazisOlvas.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/AdatBazisOlvas2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/RestKliens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/RestKliens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdatbazisMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Adatbazismenu/AdatbazisMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -139,6 +152,7 @@
       <workItem from="1670528556282" duration="24000" />
       <workItem from="1670528586592" duration="1272000" />
       <workItem from="1670602160423" duration="2776000" />
+      <workItem from="1670669792447" duration="3904000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>

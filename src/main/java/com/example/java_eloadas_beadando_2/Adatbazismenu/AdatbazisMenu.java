@@ -2,11 +2,14 @@ package com.example.java_eloadas_beadando_2.Adatbazismenu;
 
 import com.example.java_eloadas_beadando_2.models.BelepesEntity;
 import com.example.java_eloadas_beadando_2.models.MeccsEntity;
+import com.example.java_eloadas_beadando_2.models.Megjelenito;
 import com.example.java_eloadas_beadando_2.models.NezoEntity;
+import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
 import java.sql.Time;
 import java.util.ArrayList;
@@ -59,10 +62,11 @@ public class AdatbazisMenu {
         factory.close();
     }
 
+
     public static List<MeccsEntity> ReadMeccs(){
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        List meccsEntityList= session.createQuery("FROM meccs").list();
+        List meccsEntityList= session.createQuery("FROM MeccsEntity").list();
         transaction.commit();
         session.close();
         factory.close();
@@ -72,7 +76,7 @@ public class AdatbazisMenu {
     public static List<NezoEntity> ReadNezo(){
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        List nezoEntityList=session.createQuery("FROM nezo").list();
+        List nezoEntityList=session.createQuery("FROM NezoEntity").list();
         transaction.commit();
         session.close();
         factory.close();
@@ -82,7 +86,7 @@ public class AdatbazisMenu {
     public static List<BelepesEntity> ReadBelepes(){
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        List belepesEntityList=session.createQuery("FROM belepes").list();
+        List belepesEntityList=session.createQuery("from BelepesEntity").list();
         transaction.commit();
         session.close();
         factory.close();

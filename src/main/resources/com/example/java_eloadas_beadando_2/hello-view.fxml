@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
 
-<VBox alignment="TOP_CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_eloadas_beadando_2.HelloController">
-   <children>
-      <MenuBar fx:id="menuBar">
-        <menus>
-          <Menu mnemonicParsing="false" text="Adatbázis">
-            <items>
-                <MenuItem mnemonicParsing="false" onAction="#menuOlvasClick" text="Olvas" />
-                <MenuItem mnemonicParsing="false" onAction="#menuOlvas2Click" text="Olvas2" />
-                <MenuItem mnemonicParsing="false" onAction="#menuÍrClick" text="Ír" />
-                <MenuItem mnemonicParsing="false" onAction="#menuModositClick" text="Módosít" />
-                <MenuItem mnemonicParsing="false" onAction="#menuTorolClick" text="Töröl" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Rest1">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Rest2">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
-        </menus>
+<BorderPane fx:id="rootPane" prefHeight="612.0" prefWidth="455.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.java_eloadas_beadando_2.HelloController">
+   <top>
+      <MenuBar fx:id="menuBar1" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="Adatbázis">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#menuOlvasClick" text="Olvas" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuOlvas2Click" text="Olvas2" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuÍrClick" text="Ír" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuModositClick" text="Módosít" />
+                  <MenuItem mnemonicParsing="false" onAction="#menuTorolClick" text="Töröl" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Rest1">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Rest2">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+         </menus>
       </MenuBar>
-      <Label alignment="TOP_CENTER" text="Válasszon egy menüpontot" />
-   </children>
-
-</VBox>
+   </top>
+   <center>
+      <Label alignment="TOP_CENTER" text="Válasszon egy menüpontot" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

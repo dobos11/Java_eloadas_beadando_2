@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -150,7 +146,7 @@
       <workItem from="1670614025661" duration="4556000" />
       <workItem from="1670659812837" duration="2759000" />
       <workItem from="1670662597078" duration="55000" />
-      <workItem from="1670662666865" duration="2501000" />
+      <workItem from="1670662666865" duration="2528000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -215,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670663536171</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Work on xml">
+      <created>1670665799705</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670665799705</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

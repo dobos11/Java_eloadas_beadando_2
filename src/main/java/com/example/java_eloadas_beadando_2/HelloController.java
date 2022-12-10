@@ -8,14 +8,14 @@ import com.example.java_eloadas_beadando_2.models.NezoEntity;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -24,14 +24,13 @@ import java.util.List;
 public class HelloController {
     @FXML
     private BorderPane rootPane;
-    private TableView tv1;
     private Stage stage;
     private Scene scene;
     private Parent root;
 
 
     public void menuOlvasClick(ActionEvent actionEvent) throws IOException {
-        tv1=new TableView();
+        TableView tv1=new TableView();
         tv1.setVisible(true);
         tv1.setManaged(true);
         tv1.getColumns().removeAll(tv1.getColumns());
@@ -69,6 +68,21 @@ public class HelloController {
     }
 
     public void menuOlvas2Click(ActionEvent actionEvent) throws IOException {
+        HBox hBox=new HBox();
+        hBox.setPadding(new Insets(20,20,0,0));
+        Label idLb=new Label();
+        idLb.setText("Adjon meg egy ID-t:");
+        ComboBox idCb=new ComboBox();
+        List<BelepesEntity> belepesek= AdatbazisMenu.ReadBelepes();
+        for(BelepesEntity belepes:belepesek)
+            idCb.getItems().add(belepes.getId());
+        Button keresBt=new Button();
+        keresBt.setText("Keres");
+        hBox.getChildren().add(idLb);
+        hBox.getChildren().add(idCb);
+        hBox.getChildren().add(keresBt);
+
+        rootPane.setCenter(hBox);
 
     }
 

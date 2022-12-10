@@ -5,19 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Fxml/createpage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Fxml/deletepage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Fxml/readpage.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Fxml/updatepage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestCreate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestDelete.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestRead.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestUpdate.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +66,11 @@
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GIthub\works\Java bead\Java_eloadas_beadando_2\src\main\resources\com\example\java_eloadas_beadando_2" />
       <recent name="E:\GIthub\works\Java bead\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2\Fxml" />
       <recent name="E:\GIthub\works\Java bead\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2" />
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\resources" />
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\resources\com\example\java_eloadas_beadando_2" />
-      <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -161,7 +150,7 @@
       <workItem from="1670614025661" duration="4556000" />
       <workItem from="1670659812837" duration="2759000" />
       <workItem from="1670662597078" duration="55000" />
-      <workItem from="1670662666865" duration="631000" />
+      <workItem from="1670662666865" duration="2501000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -219,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670618501980</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Work on xml">
+      <created>1670663536171</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1670663536171</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

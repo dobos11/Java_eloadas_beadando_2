@@ -28,7 +28,7 @@
                 <MenuItem mnemonicParsing="false" onAction="#DeleteClick" text="Delete" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Rest2">
+          <Menu mnemonicParsing="false" onAction="#DeleteClick" text="Rest2">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
@@ -42,7 +42,7 @@
       </MenuBar>
       <Label alignment="TOP_CENTER" text="Válasszon egy menüpontot" />
       <Label text="TestLabel" />
-      <Button mnemonicParsing="false" onAction="#gombocska" text="Button" />
+      <Button mnemonicParsing="false" onMouseClicked="#CreateClick" text="Button" />
    </children>
 
 </VBox>

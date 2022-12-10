@@ -3,6 +3,7 @@ package com.example.java_eloadas_beadando_2;
 import com.example.java_eloadas_beadando_2.models.MeccsEntity;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
@@ -20,6 +21,7 @@ public class HelloApplication extends Application {
         stage.setMinWidth(480);
         stage.setMinHeight(720);
         stage.show();
+
     }
 
     public static void main(String[] args) {

@@ -148,6 +148,7 @@
       <workItem from="1670662597078" duration="55000" />
       <workItem from="1670662666865" duration="2528000" />
       <workItem from="1670666407805" duration="1607000" />
+      <workItem from="1670685005283" duration="84000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>

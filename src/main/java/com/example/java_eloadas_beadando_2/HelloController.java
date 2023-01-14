@@ -18,6 +18,7 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.Objects;
 
 public class HelloController {
     @FXML
@@ -104,11 +105,12 @@ public class HelloController {
 
 
     public void UpdateClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("update.fxml"));
+        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("updatepage.fxml"));
     }
 
 
     public void DeleteClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("deletepage.fxml"));
     }
 
     public void bt1Click(ActionEvent actionEvent) {

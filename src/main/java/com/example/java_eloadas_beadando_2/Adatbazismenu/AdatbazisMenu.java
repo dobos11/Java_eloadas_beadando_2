@@ -2,17 +2,14 @@ package com.example.java_eloadas_beadando_2.Adatbazismenu;
 
 import com.example.java_eloadas_beadando_2.models.BelepesEntity;
 import com.example.java_eloadas_beadando_2.models.MeccsEntity;
-import com.example.java_eloadas_beadando_2.models.Megjelenito;
 import com.example.java_eloadas_beadando_2.models.NezoEntity;
-import org.hibernate.SQLQuery;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.query.Query;
 
+import java.io.Serializable;
 import java.sql.Time;
-import java.util.ArrayList;
 import java.util.List;
 
 public class AdatbazisMenu {
@@ -93,34 +90,55 @@ public class AdatbazisMenu {
         return belepesEntityList;
     }
 
-    public static MeccsEntity ReadMeccsById(int id){
+    public static MeccsEntity ReadMeccsById(int itemId){
+        MeccsEntity meccs=null;
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        MeccsEntity meccs=session.load(MeccsEntity.class,id);
+        meccs = (MeccsEntity) session.get(MeccsEntity.class,itemId);
         transaction.commit();
+        System.out.println(meccs.toString());
+        MeccsEntity returnedEntity=new MeccsEntity();
+        returnedEntity.setId(meccs.getId());
+        returnedEntity.setTipus(meccs.getTipus());
+        returnedEntity.setDatum(meccs.getDatum());
+        returnedEntity.setKezdes(meccs.getKezdes());
+        returnedEntity.setBelepo(meccs.getBelepo());
+
         session.close();
         factory.close();
-        return meccs;
+        return returnedEntity;
     }
 
-    public static NezoEntity ReadNezoById(int id){
+    public static NezoEntity ReadNezoById(int itemId){
+        NezoEntity nezo=null;
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        NezoEntity nezo=session.load(NezoEntity.class,id);
+        nezo= (NezoEntity) session.get(NezoEntity.class,itemId);
         transaction.commit();
+        NezoEntity returnedEntity=new NezoEntity();
+        returnedEntity.setId(nezo.getId());
+        returnedEntity.setNev(nezo.getNev());
+        returnedEntity.setBerletes(nezo.getBerletes());
+        returnedEntity.setFerfi(nezo.getFerfi());
         session.close();
         factory.close();
-        return nezo;
+        return returnedEntity;
     }
 
-    public static BelepesEntity ReadBelepesById(int id){
+    public static BelepesEntity ReadBelepesById(int itemId){
+        BelepesEntity belepes=null;
         Session session=CreateSession();
         Transaction transaction=session.beginTransaction();
-        BelepesEntity belepes=session.load(BelepesEntity.class,id);
+        belepes=session.get(BelepesEntity.class,itemId);
         transaction.commit();
+        BelepesEntity returnedEntity=new BelepesEntity();
+        returnedEntity.setIdopont(belepes.getIdopont());
+        returnedEntity.setId(belepes.getId());
+        returnedEntity.setNezoid(belepes.getNezoid());
+        returnedEntity.setMeccsid(belepes.getMeccsid());
         session.close();
         factory.close();
-        return belepes;
+        return returnedEntity;
     }
 
     public static void UpdateMeccs(MeccsEntity uj){

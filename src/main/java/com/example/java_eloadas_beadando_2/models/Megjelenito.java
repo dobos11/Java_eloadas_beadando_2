@@ -47,4 +47,12 @@ public class Megjelenito {
     public void setBelepesIdopont(String belepesIdopont) {
         this.belepesIdopont = belepesIdopont;
     }
+
+    @Override
+    public String toString() {
+        return  "id=" + id +
+                ", nezoNev='" + nezoNev + '\'' +
+                ", meccsDatum='" + meccsDatum + '\'' +
+                ", belepesIdopont='" + belepesIdopont + '\'';
+    }
 }

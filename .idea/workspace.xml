@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestCreate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestUpdate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/models/RestUpdate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +155,7 @@
       <workItem from="1670685005283" duration="84000" />
       <workItem from="1673687127840" duration="2321000" />
       <workItem from="1673706970779" duration="2614000" />
+      <workItem from="1673777250868" duration="1347000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>

@@ -61,10 +61,10 @@ import java.util.regex.Pattern;
             Label description = new Label("A kérés elküdéséhez szükség van egy név, nem, email és státusz tulajdonság megadására. A lenti űrlapban töltheti ki az adatokat, amit küldeni szeretne!");
             Label mainTitle2 = new Label("Válasz a kérésre:");
 
-            Label userNameLabel = new Label("*Adjon meg egy nevet:");
-            Label userGenderLabel = new Label("*Adjon meg egy nemet");
-            Label userEmailLabel = new Label("*Adjon meg egy email-t");
-            Label userStatusLabel = new Label("*Adja meg a felhasználó státuszát");
+            Label userNameLabel = new Label("Adjon meg egy nevet:");
+            Label userGenderLabel = new Label("Adjon meg egy nemet");
+            Label userEmailLabel = new Label("Adjon meg egy email-t");
+            Label userStatusLabel = new Label("Adja meg a felhasználó státuszát");
 
             Label response = new Label();
 

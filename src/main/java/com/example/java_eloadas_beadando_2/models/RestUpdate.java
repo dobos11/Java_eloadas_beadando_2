@@ -11,6 +11,7 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
 import java.util.regex.Matcher;
@@ -61,11 +62,11 @@ public class RestUpdate {
         Label mainTitle2 = new Label("Válasz a kérésre:");
         Label mainTitle3 = new Label("Előző állapot:");
 
-        Label userIdLabel = new Label("*Adjon meg egy azonosítót:");
-        Label userNameLabel = new Label("*Adjon meg egy nevet:");
-        Label userGenderLabel = new Label("*Adjon meg egy nemet");
-        Label userEmailLabel = new Label("*Adjon meg egy email-t");
-        Label userStatusLabel = new Label("*Adja meg a felhasználó státuszát");
+        Label userIdLabel = new Label("Adjon meg egy azonosítót:");
+        Label userNameLabel = new Label("Adjon meg egy nevet:");
+        Label userGenderLabel = new Label("Adjon meg egy nemet");
+        Label userEmailLabel = new Label("Adjon meg egy email-t");
+        Label userStatusLabel = new Label("Adja meg a felhasználó státuszát");
 
         Label response = new Label();
         Label getResponse = new Label();
@@ -77,7 +78,7 @@ public class RestUpdate {
         mainTitle3.setPadding(new Insets(10,0,0,0));
 
         userIdLabel.setFont(Font.font("Helvetica", FontWeight.BOLD, 10));
-        userIdErrorLabel.setTextFill(Color.RED);
+        userIdErrorLabel.setTextFill(Color.DARKGRAY);
         userIdLabel.setPadding(new Insets(2,0,2,0));
 
 
@@ -96,7 +97,7 @@ public class RestUpdate {
         userEmailErrorLabel.setTextFill(Color.RED);
         userEmailErrorLabel.setPadding(new Insets(2,0,2,0));
 
-        userStatusLabel.setFont(Font.font("Helvetica", FontWeight.BOLD, 10));
+        userStatusLabel.setFont(Font.font("Helvetica", FontWeight.BOLD, 11));
         userStatusLabel.setPadding(new Insets(2,0,2,0));
         userStatusErrorLabel.setTextFill(Color.RED);
         userStatusErrorLabel.setPadding(new Insets(2,0,2,0));
@@ -124,7 +125,7 @@ public class RestUpdate {
             userNameErrorLabel.setText("");
             userGenderErrorLabel.setText("");
             userEmailErrorLabel.setText("");
-            userStatusErrorLabel.setText("");
+            userStatusErrorLabel.setText(" ");
 
             Pattern pattern = Pattern.compile("^[A-Za-z0-9+_.-]+@(.+)$");
             Matcher matcher = pattern.matcher(userEmailTextfield.getText());
@@ -137,15 +138,15 @@ public class RestUpdate {
             }
 
             if(userName == ""){
-                userNameErrorLabel.setText("A név mező nem lehet üres");
+                userNameErrorLabel.setText("A név mező nem lehet üres!");
             }
 
             if (genderComboBox.getValue() == null) {
-                userGenderErrorLabel.setText("Kötelező a nemek listájából választani!");
+                userGenderErrorLabel.setText("Kötelező választani!");
             }
 
             if (!(matcher.matches())){
-                userEmailErrorLabel.setText("Az email mező nem lehet üres és valos emailnek kell lennie!");
+                userEmailErrorLabel.setText("Az email mező nem lehet üres és valós emailnek kell lennie!");
             }
 
             if (statusComboBox.getValue() == null) {
@@ -153,7 +154,7 @@ public class RestUpdate {
             }
 
             if(statusComboBox.getValue() != null && matcher.matches() && userName != "" && genderComboBox.getValue() != null && isNumeric(userIdTextfield.getText())){
-                System.out.println("Bentvagyok!");
+                System.out.println("Sikeres!");
                 try {
                     RestKliens.GET(userIdTextfield.getText());
                     getResponse.setText("A kérés válasza: " + RestKliens.getGetResponseValue());
@@ -163,7 +164,7 @@ public class RestUpdate {
 
                 try {
                     RestKliens.PUT(userIdTextfield.getText(), userName,genderComboBox.getValue(),userEmail, statusComboBox.getValue());
-                    response.setText("A kérés válasza: " + RestKliens.getGetResponseValue());
+                    response.setText("A kérésre kapott válasz: " + RestKliens.getGetResponseValue());
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

@@ -37,9 +37,37 @@ public class RestKliens {
 
     }
 
-    static void segéd3(int code) throws IOException {
+/*
+    public static RestUser[] GET(String ID) throws IOException {
+        System.out.println("\nGET...");
+        String url = "https://gorest.co.in/public/v1/users";
+        URL usersUrl = new URL(url);
+        connection = (HttpsURLConnection) usersUrl.openConnection();
+        connection.setRequestMethod("GET");
+        connection.setRequestProperty("Authorization", "Bearer " + token);
+        int statusCode = connection.getResponseCode();
+        System.out.println("statusCode: " + statusCode);
+        String data = null;
+        RestUser[] userArray = null;
+        if (statusCode == HttpsURLConnection.HTTP_OK) {
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuffer jsonResponseData = new StringBuffer();
+            String readLine = in.readLine();
+
+            Gson gson = new Gson();
+            userArray = gson.fromJson(readLine, RestUser[].class);
+            in.close();
+        } else {
+            System.out.println("Hiba!!!");
+        }
+        connection.disconnect();
+        return userArray;
+
+    }
+*/
+    static String segéd3(int code) throws IOException {
         int statusCode = connection.getResponseCode();   // Getting response code
-        System.out.println("statusCode: "+statusCode);
+        System.out.println("statusCode: "+ statusCode);
         if (statusCode == code) {     // If responseCode is code, data fetch successful
             // Kiolvassa a válasz adatait:
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -48,11 +76,14 @@ public class RestKliens {
             while ((readLine = in.readLine()) != null)   // Append response line by line
                 jsonResponseData.append(readLine);
             in.close();
-            System.out.println("List of users: " + jsonResponseData.toString());    // Print result in string format
+            System.out.println("List of users: " + jsonResponseData.toString());
+            return jsonResponseData.toString();
+            // Print result in string format
         } else {
             System.out.println("Hiba!!!");
         }
         connection.disconnect();
+        return null;
     }
 
     public static void POST(String name, String gender, String email, String status) throws IOException {
@@ -81,6 +112,7 @@ public class RestKliens {
         BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(connection.getOutputStream(), "UTF-8"));
         wr.write(params);
         wr.close();
+        System.out.println(connection.getResponseMessage());
         connection.connect();
     }
 

@@ -10,7 +10,6 @@
         <property name="connection.url">jdbc:mysql://mysql-20221207131431.mysql.database.azure.com:3306/nezok?serverTimezone=UTC&amp;useSSL=true&amp;requireSSL=false</property>
         <property name="connection.username">Bence@mysql-20221207131431</property>
         <property name="connection.password">Password4!</property>
-        <property name="hibernate.enable_lazy_load_no_trans"></property>
         <mapping class="com.example.java_eloadas_beadando_2.models.BelepesEntity"/>
         <mapping class="com.example.java_eloadas_beadando_2.models.MeccsEntity"/>
         <mapping class="com.example.java_eloadas_beadando_2.models.NezoEntity"/>

@@ -11,14 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml">
       <change afterPath="$PROJECT_DIR$/.idea/artifacts/Java_eloadas_beadando_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Launcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Parallel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/java_eloadas_beadando_2/Parallel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/java_eloadas_beadando_2/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +164,7 @@
       <workItem from="1673793738448" duration="1165000" />
       <workItem from="1673871734733" duration="2236000" />
       <workItem from="1673874327281" duration="2160000" />
-      <workItem from="1673971761470" duration="3896000" />
+      <workItem from="1673971761470" duration="4861000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -284,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673876473884</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Work on xml">
+      <created>1673975694514</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1673975694514</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

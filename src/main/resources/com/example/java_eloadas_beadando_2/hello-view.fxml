@@ -32,6 +32,11 @@
                   <MenuItem mnemonicParsing="false" text="About" />
                </items>
             </Menu>
+            <Menu mnemonicParsing="false" text="Parallel">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ParallelClick" text="Parallel" />
+               </items>
+            </Menu>
          </menus>
       </MenuBar>
    </top>

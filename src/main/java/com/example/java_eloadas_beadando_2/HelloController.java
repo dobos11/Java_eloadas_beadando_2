@@ -10,14 +10,18 @@ import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 import java.sql.Time;
 import java.util.List;
@@ -29,6 +33,7 @@ public class HelloController {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    private Pane secPane;
 
 
     public void menuOlvasClick(ActionEvent actionEvent) throws IOException {
@@ -225,7 +230,9 @@ public class HelloController {
     }
 
     public void CreateClick(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("createpage.fxml"));
+        //FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("createpage.fxml"));
+       Pane UjOldal = FXMLLoader.load(getClass().getResource("createpage.fxml"));
+       secPane.getChildren().add(UjOldal);
 
     }
 
@@ -244,11 +251,13 @@ public class HelloController {
         FXMLLoader fxmlLoader = FXMLLoader.load(getClass().getResource("deletepage.fxml"));
     }
 
+
+
     public void bt1Click(ActionEvent actionEvent) {
     }
 
 
-
-
+    public void ParallelClick(ActionEvent actionEvent) {
+    }
 }
 

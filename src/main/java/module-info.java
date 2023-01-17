@@ -7,6 +7,7 @@ module com.example.java_eloadas_beadando_2 {
     requires java.sql;
     requires antlr;
     requires com.google.gson;
+    requires java.desktop;
     opens com.example.java_eloadas_beadando_2 to javafx.fxml;
     exports com.example.java_eloadas_beadando_2;
     exports com.example.java_eloadas_beadando_2.models;

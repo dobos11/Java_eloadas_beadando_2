@@ -285,5 +285,41 @@ public class HelloController {
 
     public void ParallelClick(ActionEvent actionEvent) {
     }
+    
+
+    public void GrafikonClick(ActionEvent actionEvent) {
+    }
+
+    public void Create2Click(ActionEvent actionEvent) {
+    }
+
+    public void Read2Click(ActionEvent actionEvent) {
+    }
+
+    public void Update2Click(ActionEvent actionEvent) {
+    }
+
+    public void Delete2Click(ActionEvent actionEvent) {
+    }
+
+    public void StreamClick(ActionEvent actionEvent) {
+    }
+    
+    
+
+    public void DontesiClick(ActionEvent actionEvent) {
+    }
+
+    public void LetoltesClick(ActionEvent actionEvent) {
+    }
+
+    public void Letoltes2Click(ActionEvent actionEvent) {
+    }
+
+    public void TobbClick(ActionEvent actionEvent) {
+    }
+
+    public void Tobb2Click(ActionEvent actionEvent) {
+    }
 }
 

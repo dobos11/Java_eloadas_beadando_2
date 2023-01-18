@@ -24,7 +24,7 @@ public class RestDelete {
     public VBox getContainer() {return container;}
 
     public RestDelete(String title, String taskDescription){
-        createFilterBox();
+        FilterBox();
 
         this.title = new Label(title);
         this.title.setFont(Font.font("Helvetica", FontWeight.EXTRA_BOLD, 25));
@@ -45,7 +45,7 @@ public class RestDelete {
         this.container.getChildren().addAll(this.title, taskTitle , this.taskDescription, this.filterBox);
     }
 
-    public void createFilterBox(){
+    public void FilterBox(){
         Label mainTitle = new Label("Delete kérés küldése:");
         Label description = new Label("A kérés elküdéséhez egy azonosító számot kell megadni! Ha nem megfelelő azonosítót adunk meg, hiba keletkezik, mivel egy olyan erőforrást akarunk elérni, ami nem létezik!");
         Label description2 = new Label("A könnyebb tesztelhetőség érdekében itt van néhány azonosító, amin lehet tesztelni: 100, 300, 3369, 6139");

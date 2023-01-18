@@ -35,7 +35,7 @@ public class RestUpdate {
     public VBox getContainer() {return container;}
 
     public RestUpdate(String title, String taskDescription){
-        createFilterBox();
+        FilterBox();
 
         this.title = new Label(title);
         this.title.setFont(Font.font("Helvetica", FontWeight.EXTRA_BOLD, 25));
@@ -56,7 +56,7 @@ public class RestUpdate {
         this.container.getChildren().addAll(this.title, taskTitle , this.taskDescription, this.filterBox);
     }
 
-    public void createFilterBox(){
+    public void FilterBox(){
         Label mainTitle = new Label("PUT kérés küldése:");
         Label description = new Label("A kérés elküdéséhez szükség van egy azonosito, név, nem, email és státusz tulajdonság megadására. A lenti űrlapban töltheti ki az adatokat, amit küldeni szeretne!");
         Label mainTitle2 = new Label("Válasz a kérésre:");

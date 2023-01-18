@@ -22,14 +22,14 @@ public class RestKliens {
         GET(null);
     }
 
-    public static void GET(String ID) throws IOException {  // Get a list of users
+    public static void GET(String ID) throws IOException {
         System.out.println("\nGET...");
         String url = "https://gorest.co.in/public/v1/users";
         if(ID!=null)
             url=url+"/"+ID;
-        URL usersUrl = new URL(url); // Url for making GET request
+        URL usersUrl = new URL(url);
         connection = (HttpsURLConnection) usersUrl.openConnection();
-        connection.setRequestMethod("GET");  // Set request method
+        connection.setRequestMethod("GET");
         if(ID!=null)
             connection.setRequestProperty("Authorization", "Bearer " + token);
         segéd3(HttpsURLConnection.HTTP_OK);
@@ -65,26 +65,7 @@ public class RestKliens {
 
     }
 */
-    static String segéd3(int code) throws IOException {
-        int statusCode = connection.getResponseCode();   // Getting response code
-        System.out.println("statusCode: "+ statusCode);
-        if (statusCode == code) {     // If responseCode is code, data fetch successful
-            // Kiolvassa a válasz adatait:
-            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-            StringBuffer jsonResponseData = new StringBuffer();
-            String readLine = null;
-            while ((readLine = in.readLine()) != null)   // Append response line by line
-                jsonResponseData.append(readLine);
-            in.close();
-            System.out.println("List of users: " + jsonResponseData.toString());
-            return jsonResponseData.toString();
-            // Print result in string format
-        } else {
-            System.out.println("Hiba!!!");
-        }
-        connection.disconnect();
-        return null;
-    }
+
 
     public static void POST(String name, String gender, String email, String status) throws IOException {
         System.out.println("\nPOST...");
@@ -116,14 +97,35 @@ public class RestKliens {
         connection.connect();
     }
 
+    static String segéd3(int code) throws IOException {
+        int statusCode = connection.getResponseCode();   // Getting response code
+        System.out.println("statusCode: "+ statusCode);
+        if (statusCode == code) {     // If responseCode is code, data fetch successful
+            // Kiolvassa a válasz adatait:
+            BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+            StringBuffer jsonResponseData = new StringBuffer();
+            String readLine = null;
+            while ((readLine = in.readLine()) != null)   // Append response line by line
+                jsonResponseData.append(readLine);
+            in.close();
+            System.out.println("List of users: " + jsonResponseData.toString());
+            return jsonResponseData.toString();
+            // Print result in string format
+        } else {
+            System.out.println("Hiba!!!");
+        }
+        connection.disconnect();
+        return null;
+    }
+
     public static void PUT(String ID, String name, String gender, String email, String status) throws IOException {
         System.out.println("\nPUT...");
         String url = "https://gorest.co.in/public/v1/users"+"/"+ID;
-        URL postUrl = new URL(url);  // Url for making PUT request
+        URL postUrl = new URL(url);
         connection = (HttpsURLConnection) postUrl.openConnection();
-        connection.setRequestMethod("PUT");            // Set PUT as request method
+        connection.setRequestMethod("PUT");
         segéd1();
-        String params = "{\"name\":\""+name+"\", \"gender\":\""+gender+"\", \"email\":\""+email+"\", \"status\":\""+status+"\"}";   // Adding Body payload for POST request
+        String params = "{\"name\":\""+name+"\", \"gender\":\""+gender+"\", \"email\":\""+email+"\", \"status\":\""+status+"\"}";
         segéd2(params);
         segéd3(HttpsURLConnection.HTTP_OK);
     }
@@ -131,9 +133,9 @@ public class RestKliens {
     public static void DELETE(String ID) throws IOException {
         System.out.println("\nDELETE...");
         String url = "https://gorest.co.in/public/v1/users"+"/"+ID;
-        URL postUrl = new URL(url);  // Url for making PUT request
+        URL postUrl = new URL(url);
         connection = (HttpsURLConnection) postUrl.openConnection();
-        connection.setRequestMethod("DELETE");            // Set DELETE as request method
+        connection.setRequestMethod("DELETE");
         segéd1();
         segéd3(HttpsURLConnection.HTTP_NO_CONTENT);
         //(HttpsURLConnection.HTTP_NO_CONTENT) => 201

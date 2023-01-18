@@ -35,7 +35,7 @@ import java.util.regex.Pattern;
         public VBox getContainer() {return container;}
 
         public RestCreate(String title, String taskDescription){
-            createFilterBox();
+            FilterBox();
 
             this.title = new Label(title);
             this.title.setFont(Font.font("Helvetica", FontWeight.EXTRA_BOLD, 25));
@@ -56,7 +56,7 @@ import java.util.regex.Pattern;
             this.container.getChildren().addAll(this.title, taskTitle , this.taskDescription, this.filterBox);
         }
 
-        public void createFilterBox(){
+        public void FilterBox(){
             Label mainTitle = new Label("POST kérés küldése:");
             Label description = new Label("A kérés elküdéséhez szükség van egy név, nem, email és státusz tulajdonság megadására. A lenti űrlapban töltheti ki az adatokat, amit küldeni szeretne!");
             Label mainTitle2 = new Label("Válasz a kérésre:");

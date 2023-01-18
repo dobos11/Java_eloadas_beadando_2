@@ -29,12 +29,30 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Rest2">
                <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#Create2Click" text="Create" />
+                  <MenuItem mnemonicParsing="false" onAction="#Read2Click" text="Read"/>
+                  <MenuItem mnemonicParsing="false" onAction="#Update2Click" text="Update" />
+                  <MenuItem mnemonicParsing="false" onAction="#Delete2Click" text="Delete" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Parallel">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#ParallelClick" text="Parallel" />
+                  <MenuItem mnemonicParsing="false" onAction="#StreamClick" text="Stream" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="SoapKliens">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#LetoltesClick" text="Letöltés" />
+                  <MenuItem mnemonicParsing="false" onAction="#Letoltes2Click" text="Letöltés2" />
+                  <MenuItem mnemonicParsing="false" onAction="#GrafikonClick" text="Grafikon" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Adatbányászat">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#DontesiClick" text="Döntési fa" />
+                  <MenuItem mnemonicParsing="false" onAction="#TobbClick" text="Több algoritmus"/>
+                  <MenuItem mnemonicParsing="false" onAction="#Tobb2Click" text="Több algoritmus-2" />
                </items>
             </Menu>
          </menus>

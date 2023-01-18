@@ -24,7 +24,7 @@ public class RestRead {
     public VBox getContainer() {return container;}
 
     public RestRead(String title, String taskDescription){
-        createFilterBox();
+        FilterBox();
 
         this.title = new Label(title);
         this.title.setFont(Font.font("Helvetica", FontWeight.EXTRA_BOLD, 25));
@@ -45,11 +45,11 @@ public class RestRead {
         this.container.getChildren().addAll(this.title, taskTitle , this.taskDescription, this.filterBox);
     }
 
-    public void createFilterBox(){
+    public void FilterBox(){
         Label mainTitle = new Label("Get kérés küldése:");
         Label description = new Label("A kérés elküdéséhez egy azonosító számot kell megadni! Ha nem megfelelő azonosítót adunk meg, hiba keletkezik, mivel egy olyan erőforrást akarunk elérni, ami nem létezik!");
         Label description2 = new Label("A könnyebb tesztelhetőség érdekében itt van néhány azonosító, amin lehet tesztelni: 100, 300, 3369, 6139");
-        Label description3 = new Label("Nem létező azonosítót is meg lehet adni, de akkor hibaüzenetet kapunk, az erőforrás adatai helyett!");
+        Label description3 = new Label("Nem létező azonosítót is meg lehet adni, de akkor hibaüzenetet kapunk!");
         Label mainTitle2 = new Label("Válasz a kérésre:");
         Label userIdLabel = new Label("Adjon meg egy azonosítót");
         Label alertIdError = new Label();

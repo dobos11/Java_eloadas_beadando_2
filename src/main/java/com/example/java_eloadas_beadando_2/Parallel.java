@@ -55,14 +55,11 @@ public class Parallel {
         gridPane.setGridLinesVisible(true);
         gridPane.setAlignment(Pos.BASELINE_CENTER);
 
-
-
         this.container = new VBox();
 
         this.container.getChildren().addAll(this.title, taskTitle, this.taskDescription ,gridPane);
         Making();
     }
-
     public void Making(){
         Thread taskThread = new Thread(new Runnable() {
             @Override

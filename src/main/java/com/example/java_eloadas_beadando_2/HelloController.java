@@ -166,7 +166,7 @@ public class HelloController {
         Label ujBelepesLabel=new Label("Belépés módosítása");
 
         HBox idHBox=new HBox();
-        Label idLabel=new Label("Válassza ki a módosítandó elem ID-jét");
+        Label idLabel=new Label("Válassza ki a módosítandó elem ID-jét (kötelező)");
         ComboBox<Integer> idCombobox=new ComboBox();
         List<BelepesEntity> belepesek = AdatbazisMenu.ReadBelepes();
         for(BelepesEntity belepes:belepesek)
@@ -227,6 +227,32 @@ public class HelloController {
     }
 
     public void menuTorolClick(ActionEvent actionEvent) {
+        VBox vBox=new VBox();
+        vBox.setPadding(new Insets(20,20,20,20));
+        vBox.setSpacing(20);
+
+        Label torlesLabel=new Label("Belépés törlése");
+
+        HBox idHBox=new HBox();
+        Label idLabel=new Label("Válassza ki a törlendő elem ID-jét");
+        ComboBox<Integer> idCombobox=new ComboBox();
+        List<BelepesEntity> belepesek = AdatbazisMenu.ReadBelepes();
+        for(BelepesEntity belepes:belepesek)
+            idCombobox.getItems().add(belepes.getId());
+        idHBox.setSpacing(20);
+        idHBox.getChildren().addAll(idLabel,idCombobox);
+
+        Button torlesButton = new Button("Törlés");
+        torlesButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+               AdatbazisMenu.DeleteBelepes(idCombobox.getValue());
+               Label sikerLabel=new Label("Sikeres törlés");
+               rootPane.setCenter(sikerLabel);
+            }
+        });
+        vBox.getChildren().addAll(torlesLabel,idHBox,torlesButton);
+        rootPane.setCenter(vBox);
     }
 
     public void CreateClick(ActionEvent actionEvent) throws IOException {

@@ -164,7 +164,7 @@
       <workItem from="1673874327281" duration="2160000" />
       <workItem from="1673971761470" duration="4861000" />
       <workItem from="1674033192599" duration="920000" />
-      <workItem from="1674034955707" duration="819000" />
+      <workItem from="1674034955707" duration="1231000" />
     </task>
     <task id="LOCAL-00001" summary="Adatbázis Azure-ban, Entity osztályok legenerálása, hibernate.cfg.xml létrehozása, CreateMeccs létrehozása és tesztelése.">
       <created>1670438815267</created>
@@ -292,7 +292,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674034103741</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Work on xml">
+      <created>1674036190619</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674036190619</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

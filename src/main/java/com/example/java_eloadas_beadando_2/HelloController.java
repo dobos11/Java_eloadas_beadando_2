@@ -124,7 +124,7 @@ public class HelloController {
         meccshBox.getChildren().addAll(meccsLabel,meccsCombobox);
 
         HBox nezoHBox=new HBox();
-        Label nezolabel=new Label("Vállasszon egy elemet");
+        Label nezolabel=new Label("Vállasszon egy néző Id-t:");
         ComboBox<Integer> nezoCombobox=new ComboBox();
         List<NezoEntity> nezok = AdatbazisMenu.ReadNezo();
         for(NezoEntity nezo:nezok)
@@ -184,7 +184,7 @@ public class HelloController {
         meccshBox.getChildren().addAll(meccsLabel,meccsCombobox);
 
         HBox nezoHBox=new HBox();
-        Label nezolabel=new Label("Vállasszon egy elemet");
+        Label nezolabel=new Label("Vállasszon egy nézőId-t");
         ComboBox<Integer> nezoCombobox=new ComboBox();
         List<NezoEntity> nezok = AdatbazisMenu.ReadNezo();
         for(NezoEntity nezo:nezok)

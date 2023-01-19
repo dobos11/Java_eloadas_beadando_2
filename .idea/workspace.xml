@@ -9,8 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="Work on xml">
+    <list default="true" id="af44d68d-0605-4d7e-8088-22439d8235b5" name="Changes" comment="A főmappába tettem a jar fájlt">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Java_eloadas_beadando_2_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Java_eloadas_beadando_2_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +50,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JPA.DatabaseSchemaImportDialog&quot;: &quot;b5f4e868-a882-4aff-8905-1fb716c79b1d&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-11&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Bence/IdeaProjects/Java_eloadas_beadando_2/src/main/java/com/example/java_eloadas_beadando_2&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Javafx/javafx-sdk-19/bin&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Mappings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JPA.DatabaseSchemaImportDialog": "b5f4e868-a882-4aff-8905-1fb716c79b1d",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-11",
+    "last_directory_selection": "C:/Users/Bence/IdeaProjects/Java_eloadas_beadando_2/src/main/java/com/example/java_eloadas_beadando_2",
+    "last_opened_file_path": "C:/Program Files/Java/javafx-sdk-19/bin",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Bence\IdeaProjects\Java_eloadas_beadando_2\src\main\java\com\example\java_eloadas_beadando_2" />
